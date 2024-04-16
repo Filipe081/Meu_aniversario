@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Show de Stand-up | Whindersson Nunes</title>
+    <title>Aniversário</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,19 +11,83 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
-    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/sv.png" alt="wn">
+            <img class="hero__logo" src="./images/logo-white.png"/>
             <p class="hero__text">
-                O maior evento humoristico do Brasil começa em 12d 20h 20m 20s
+                Meu Aniversário começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Teatro Liberdade - R. São Joaquim, 129, São Paulo - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                    Entrada Free
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        13/05/2024 às 16hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
 
+    <section class="event event--fila">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details_title">Atração confirmada</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, numquam esse veritatis sit vitae corporis voluptatibus veniam, similique maiores ipsa doloribus, eos blanditiis soluta magnam saepe cumque incidunt harum placeat!
+                </p>
+            </div>
+            <img class="event__image" src="./images/4.png" alt="fila">
+        </div>
+    </section>
+    <section class="event event--comedia event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details_title">Top 1 em Comédia</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, numquam esse veritatis sit vitae corporis voluptatibus veniam, similique maiores ipsa doloribus, eos blanditiis soluta magnam saepe cumque incidunt harum placeat!
+                </p>
+            </div>
+            <img class="event__image" src="./images/3.png" alt="comedia">
+        </div>
+    </section>
+    <section class="event event--parodia">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details_title">Paródias</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, numquam esse veritatis sit vitae corporis voluptatibus veniam, similique maiores ipsa doloribus, eos blanditiis soluta magnam saepe cumque incidunt harum placeat!
+                </p>
+            </div>
+            <img class="event__image" src="./images/2.png" alt="parodia">
+        </div>
+    </section>
+    <section class="event event--praticos event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details_title">Conteúdos práticos e bastidores exclusivos sobre a festa.</h2>
+                <p class="event__details__description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, numquam esse veritatis sit vitae corporis voluptatibus veniam, similique maiores ipsa doloribus, eos blanditiis soluta magnam saepe cumque incidunt harum placeat!
+                </p>
+            </div>
+            <img class="event__image" src="./images/1.png" alt="praticos">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>
